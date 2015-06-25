@@ -12,6 +12,9 @@
     "type": "git",
     "url": "git@github.com:react-lazy-content/react-lazy-content.git"
   },
+  "dependencies": {
+    "jquery": "2.1.x"
+  },
   "devDependencies": {
     "mocha": "2.2.x"
   }
