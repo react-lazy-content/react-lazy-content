@@ -4,7 +4,7 @@
   "description": "React wrapper around jQuery.LazyContent - Lazy load of any content made easy",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/mocha"
+    "test": "./node_modules/.bin/jasmine"
   },
   "author": "moret.pro.br",
   "license": "MIT",
@@ -12,10 +12,12 @@
     "type": "git",
     "url": "git@github.com:react-lazy-content/react-lazy-content.git"
   },
-  "dependencies": {
-    "jquery": "2.1.x"
+  "peerDependencies": {
+    "jquery": "2.x"
   },
   "devDependencies": {
-    "mocha": "2.2.x"
+    "jasmine": "2.x",
+    "jquery": "2.x",
+    "rewire": "2.x"
   }
 }
