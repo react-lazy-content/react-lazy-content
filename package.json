@@ -1,6 +1,6 @@
 {
   "name": "react-lazy-content",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "React wrapper around jQuery.LazyContent - Lazy load of any content made easy",
   "main": "index.js",
   "scripts": {
