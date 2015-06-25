@@ -16,14 +16,17 @@ var endpoint = 'https://api.github.com/repos/facebook/react/commits';
 var ComponentWithLazy = React.createClass({
   mixins: [LazyContent],
 
-  getInitialState: function getInitialState() {
-    return {content: 'loading...'};
+  getInitialState: function() {
+    return {commits: null};
   },
 
   render: function render() {
+    var commits = this.state.commits;
+    var commitMessage = commits ? commits[0].commit.message : 'loading...';
+
     return (
-      <code data-lazy-loader='someService'>
-        {this.state.content}
+      <code data-lazy-loader='commits'>
+        {commitMessage}
       </code>
     );
   },
@@ -32,12 +35,8 @@ var ComponentWithLazy = React.createClass({
     this.mountLazyLoaders();
   },
 
-  someServiceAPI: function someServiceAPI() {
-    jQuery.get(endpoint, this.updateContent);
-  },
-
-  updateContent: function updateContent(data) {
-    this.setState({content: data[0].commit.message});
+  commitsAPI: function commitsAPI(success) {
+    jQuery.get(endpoint, success);
   }
 });
 
