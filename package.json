@@ -1,0 +1,18 @@
+{
+  "name": "react-lazy-content",
+  "version": "1.0.0",
+  "description": "React wrapper around jQuery.LazyContent - Lazy load of any content made easy",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha"
+  },
+  "author": "moret.pro.br",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:react-lazy-content/react-lazy-content.git"
+  },
+  "devDependencies": {
+    "mocha": "2.2.x"
+  }
+}
