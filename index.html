@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>react-lazy-content-demo</title>
+  <style>
+html, body {
+  font-family: sans-serif;
+}
+
+.commit {
+  margin: 120vh 0 50px;
+}
+  </style>
+</head>
+
+<body>
+  <h1>React Lazy Content Demo</h1>
+  <div>See the code of this demo on the <a href='https://github.com/react-lazy-content/react-lazy-content'>project page</a>.</div>
+  <hr/>
+  <div>
+    Scroll to see a commit message that is only fetched after the page loads and this component is visible, i.e., the user scrolled up to that point, thanks to the <a href='https://github.com/tulios/jquery.lazy_content/'>jquery.lazyContent</a> plugin:
+  </div>
+  <div class='commit'>
+    Last commit from github.com/facebook/react:
+    <pre><span id='app' /></pre>
+  </div>
+  <script src='bundle.js'></script>
+</body>
+
+</html>
